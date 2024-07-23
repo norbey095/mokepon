@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2? family= Croissant+One & display=swap');
+
+body{
+    font-family: 'Croissant One', cursive;
+    background-color: #053B50;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.titulo{
+    color: white;
+} 
+
+.subtitulo{
+    color: white;
+    font-size: 20px;
+}
+
+
+.tarjetas{
+  display: flex;
+  gap: 10px;  
+}
+
+.tarjeta-de-mokepon {
+    width: 190px;
+    height: 100px;
+    background: #176B87;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+#boton-mascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-top: 30px;
+}
+
+input {
+    display: none;
+}
+input:checked + label{
+    background: #40A2D8;
+}
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+.boton-de-ataque{
+    background-color: #176B87;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100px;
+    color: white;
+    font-family: 'Croissant One', cursive;
+}
+#mensajes{
+    width: 280px;
+    background: pink;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Croissant One', cursive;
+}
+#boton-reiniciar{
+    border: none;
+    color: blue;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin: 10px 0;
+}
+
+@media (max-width:560px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    .tarjetas-ataques{
+        flex-direction: column;
+    }
+}
+@media (max-width:300px){
+    #ver-mapa div{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+    }
+}
